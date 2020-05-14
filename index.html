@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Sort an Array of Objects</title>
+</head>
+<body>
+    <script>
+    var persons = [
+        { name: "Harry", age: 14 },
+        { name: "Ethan", age: 30 },
+        { name: "Peter", age: 21 },
+        { name: "Clark", age: 42 },
+        { name: "Alice", age: 16 }
+    ];
+    
+    // Sort by age
+    persons.sort(function (a, b) {
+        return a.age - b.age;
+    });
+      
+    // Loop through all the elements in the array 
+    for(var i in persons)  {  
+        // Loop through all the properties in the object  
+        for(var prop in persons[i]) {  
+            document.write(prop + ": " + persons[i][prop] + "<br>"); 
+        }
+        document.write("<hr>");
+    }
+    </script>
+</body>
+</html>                            
