@@ -16,9 +16,9 @@
     
     // Sort by age
     persons.sort(function (a, b) {
-       if (a.age !== b.age) { return a.age - b.age; }
-       else { return a.month - b.month; }
-       // return a.day - b.day;
+       if ( a.age !== b.age ) { return a.age - b.age; }
+       else if ( a.month !== b.month ) { return a.month - b.month; } 
+       else { return a.day - b.day; }
     });
       
     // Loop through all the elements in the array 
