@@ -25,11 +25,15 @@
        else { return b.day - a.day; }
     });
     
-    document.write("PL" +" ");      
+    document.write("<table border = "1">);
+    document.write("<tr>");
+    document.write("<th> PL: </th>");    
     for(var prop in persons[1]) {  
-            document.write(prop + " "); 
-    }      
-    document.write("<br>");    
+            document.write("<th>" + prop + "<th>"); 
+    } 
+    document.write("</tr>");    
+    document.write("</table>);    
+                   
     // Loop through all the elements in the array 
     for(var i in persons)  { 
         // Loop through all the properties in the object 
@@ -39,6 +43,7 @@
         }
         document.write("<br>");
     }
+   
     </script>
 </body>
 </html>
