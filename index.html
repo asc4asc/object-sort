@@ -19,9 +19,9 @@
     
     // Sort by age - same age ?????? can I set a flag or?
     persons.sort(function (a, b) {
-       if ( a.age !== b.age ) { return a.age - b.age; }
-       else if ( a.month !== b.month ) { return a.month - b.month; } 
-       else { return a.day - b.day; }
+       if ( a.age !== b.age ) { return b.age - a.age; }
+       else if ( a.month !== b.month ) { return b.month - a.month; } 
+       else { return b.day - a.day; }
     });
       
     // Loop through all the elements in the array 
