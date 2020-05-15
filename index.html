@@ -20,9 +20,9 @@
     
     // Sort by age - same age ?????? can I set a flag or?
     persons.sort(function (a, b) {
-       if ( a.age !== b.age ) { return b.age - a.age; }
-       else if ( a.month !== b.month ) { return b.month - a.month; } 
-       else { return b.day - a.day; }
+       if ( a.Ind !== b.Ind ) { return b.Ind - a.Ind; }
+       else if ( a.Diff !== b.Diff ) { return b.Diff - a.Diff; } 
+       else { return b.TD - a.TD; }
     });
     
     document.write("<table border = '1'>");
@@ -37,7 +37,7 @@
     for(var i in persons)  { 
         document.write("<tr>");
         // Loop through all the properties in the object 
-        document.write("<th>"+1+i*1+"</th>");
+        document.write("<th>"+(1+i)*1+"</th>");
         for(var prop in persons[i]) {  
             document.write("<th>" + persons[i][prop] + "</th>"); 
         }
